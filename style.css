@@ -1,0 +1,159 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    display: flex;
+    align-items: center;
+    background: #f0f3f5;
+}
+
+.container{
+    width: 100%;
+    height: 98vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.banner{
+    background: url(imgs/banner.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100%;
+    border-bottom: 2px solid rgba(0, 0, 0, 0.486);
+    width: 100%;
+    height: 130px;
+}
+
+.profile{
+    background: url(imgs/profile-pic.jpg);
+    background: cover;
+    background-repeat: no-repeat;
+    background-size: 200px;
+    margin-top: -60px;
+    margin-left: 18px;
+    width: 150px;
+    height: 140px;
+    background-color: red;
+    border: 2px solid #fff;
+    border-radius: 100%;
+}
+
+.nickname{
+    display: inline-block;
+    justify-content: start;
+    margin-top: -80px;
+    margin-left: 190px;
+}
+
+.nickname p{
+    font-weight: bold;
+}
+
+.info{
+    width: 250px;
+    height: 180px;
+    background: #ffffff;
+    margin: 70px 0px 0px 19px;
+    border-radius: 8px; 
+    box-shadow: 0px 2px 4px 2px rgba(0, 0, 0, 0.281);
+}
+
+.text-info{
+    margin: 15px;
+    flex-direction: start;
+}
+
+.icon{
+    display: flex;flex-direction: column;
+    margin: -180px 0px 0px 300px;
+    width: 700px;
+    height: 300px;
+}
+
+
+.github-icon,
+.instagram-icon,
+.linkedin-icon {
+    margin-top: 0;
+    margin-bottom: 10px;
+    width: 699px;
+    height: 60px;
+    border-radius: 8px;
+    border: 2px solid rgba(0, 0, 0, 0.486);
+    text-align: center;
+}
+
+.github-icon{
+    background: url(imgs/github-6195_eJbQgwghG.png);
+    background-repeat: no-repeat;
+    background-size: 50px;
+    background-position: 8px;
+    background-color:  #ffffff;
+}
+
+.instagram-icon{
+    background: url(imgs/instagram-6274_VZCX6homSV.png);
+    background-repeat: no-repeat;
+    background-size: 50px;
+    background-position: 8px; 
+    background-color:  #ffffff;
+}
+
+.linkedin-icon{
+    background: url(imgs/linkedin-6212_Gbb0kFZnF.png);
+    background-repeat: no-repeat;
+    background-size: 50px;
+    background-position: 8px; 
+    background-color:  #ffffff;
+}
+
+.github-icon p{
+    display: flex;
+    text-align: start;
+    margin: 8px 10px 0px 80px;
+}
+
+.github-icon a{
+    display: flex;
+    text-align: start;
+    margin: 0px 0px 0px 80px;
+}
+
+.instagram-icon p{
+    display: flex;
+    text-align: start;
+    margin: 8px 10px 0px 80px;
+}
+
+.instagram-icon a{
+    display: flex;
+    text-align: start;
+    margin: 0px 0px 0px 80px;
+}
+
+.linkedin-icon p{
+    display: flex;
+    text-align: start;
+    margin: 8px 10px 0px 80px;
+}
+
+.linkedin-icon a{
+    display: flex;
+    text-align: start;
+    margin: 0px 0px 0px 80px;
+}
+
+/* media queries
+.icons {
+    display: flex;
+    margin: 70px 0px 0px 28px;;
+    width: 450px;
+    height: 40px;
+    border-radius: 8px;
+    border: 2px solid #e464a8;
+    text-align: center;
+}
+ */
+
