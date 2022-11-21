@@ -1,22 +1,24 @@
+@import url('https://fonts.googleapis.com/css2?family=Sono:wght@200;400&display=swap');
 *{
     margin: 0;
     padding: 0;
 }
 
-body{
+body {
     display: flex;
     align-items: center;
     background: #f0f3f5;
 }
 
-.container{
+.container {
     width: 100%;
     height: 98vh;
     display: flex;
     flex-direction: column;
+    overflow: hidden;
 }
 
-.banner{
+.banner {
     background: url(imgs/banner.jpg);
     background-repeat: no-repeat;
     background-position: center;
@@ -26,7 +28,8 @@ body{
     height: 130px;
 }
 
-.profile{
+.profile {
+    display: flex;
     background: url(imgs/profile-pic.jpg);
     background: cover;
     background-repeat: no-repeat;
@@ -40,120 +43,167 @@ body{
     border-radius: 100%;
 }
 
-.nickname{
+.nickname {
+    font-family: 'Sono', sans-serif;
     display: inline-block;
     justify-content: start;
     margin-top: -80px;
     margin-left: 190px;
 }
 
-.nickname p{
+.nickname p {
     font-weight: bold;
 }
 
-.info{
+/* Legenda/info */
+.info {
     width: 250px;
     height: 180px;
     background: #ffffff;
-    margin: 70px 0px 0px 19px;
-    border-radius: 8px; 
+    margin: -97px 0px 0px 19px;
+    border-radius: 8px;
     box-shadow: 0px 2px 4px 2px rgba(0, 0, 0, 0.281);
 }
 
-.text-info{
+.text-info {
     margin: 15px;
     flex-direction: start;
 }
 
-.icon{
-    display: flex;flex-direction: column;
-    margin: -180px 0px 0px 300px;
+.info-links {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.typing-svg{
+    display: flex;
+    margin:0px 50px 0px 30px;
+}
+
+/* Icones das redes sociais */
+.icons {
+    margin: 50px 0px 30px 50px;
     width: 700px;
     height: 300px;
 }
-
 
 .github-icon,
 .instagram-icon,
 .linkedin-icon {
     margin-top: 0;
     margin-bottom: 10px;
-    width: 699px;
+    width: 80%;
     height: 60px;
     border-radius: 8px;
     border: 2px solid rgba(0, 0, 0, 0.486);
     text-align: center;
+    text-decoration: none;
 }
 
-.github-icon{
+.github-icon {
     background: url(imgs/github-6195_eJbQgwghG.png);
     background-repeat: no-repeat;
     background-size: 50px;
     background-position: 8px;
-    background-color:  #ffffff;
+    background-color: #ffffff;
 }
 
-.instagram-icon{
+.instagram-icon {
     background: url(imgs/instagram-6274_VZCX6homSV.png);
     background-repeat: no-repeat;
     background-size: 50px;
-    background-position: 8px; 
-    background-color:  #ffffff;
+    background-position: 8px;
+    background-color: #ffffff;
 }
 
-.linkedin-icon{
+.linkedin-icon {
     background: url(imgs/linkedin-6212_Gbb0kFZnF.png);
     background-repeat: no-repeat;
     background-size: 50px;
-    background-position: 8px; 
-    background-color:  #ffffff;
+    background-position: 8px;
+    background-color: #ffffff;
 }
 
-.github-icon p{
+.github-icon p {
     display: flex;
     text-align: start;
     margin: 8px 10px 0px 80px;
 }
 
-.github-icon a{
+.github-icon a {
     display: flex;
     text-align: start;
     margin: 0px 0px 0px 80px;
 }
 
-.instagram-icon p{
+.instagram-icon p {
     display: flex;
     text-align: start;
     margin: 8px 10px 0px 80px;
 }
 
-.instagram-icon a{
+.instagram-icon a {
     display: flex;
     text-align: start;
     margin: 0px 0px 0px 80px;
 }
 
-.linkedin-icon p{
+.linkedin-icon p {
     display: flex;
     text-align: start;
     margin: 8px 10px 0px 80px;
 }
 
-.linkedin-icon a{
+.linkedin-icon a {
     display: flex;
     text-align: start;
     margin: 0px 0px 0px 80px;
 }
 
-/* media queries
-.icons {
-    display: flex;
-    margin: 70px 0px 0px 28px;;
-    width: 450px;
-    height: 40px;
-    border-radius: 8px;
-    border: 2px solid #e464a8;
-    text-align: center;
+.github-icon:hover,
+.instagram-icon:hover,
+.linkedin-icon:hover{
+    text-decoration: underline rgb(255, 0, 221);
 }
- */
 
+@media screen and (max-width:600px) {
+
+    .container {
+        width: 100%;
+        height: 80%;
+        overflow: hidden;
+    }
+
+    .info-links {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .info {
+        margin: 50px 50px -30px 50px;
+        justify-content: center;
+        width: 368px;
+        height: 130px;
+        background: #ffffff;
+        border-radius: 8px;
+        box-shadow: 0px 2px 4px 2px rgba(0, 0, 0, 0.281);
+    }
+
+    .typing-svg{
+        margin-left: 90px;
+    }
+
+    .github-icon,
+    .instagram-icon,
+    .linkedin-icon {
+        margin: 10px 0px 10px 140px;
+        width: 53%;
+        height: 60px;
+        border-radius: 8px;
+        border: 2px solid rgba(0, 0, 0, 0.486);
+        text-align: center;
+    }
+}
