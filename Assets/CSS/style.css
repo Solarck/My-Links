@@ -1,0 +1,125 @@
+@import url('https://fonts.googleapis.com/css2?family=Sono:wght@200;400&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'sono', sans-serif;
+    display: flex;
+    background: rgb(11, 11, 11);
+    color: #ffff;
+}
+
+.main {
+    width: 100%;
+    height: 128vh;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    width: 60%;
+    margin-top: 28px;
+}
+
+/* Nome */
+.name {
+    font-size: 30px;
+    margin-top: 50px;
+    margin-left: 0px;
+
+}
+
+/* Foto */
+.profile {
+    width: 150px;
+    height: 130px;
+    border-radius: 100%;
+    border: 3px solid #ffff;
+}
+
+/* Texto de descrição */
+.description {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    width: 60%;
+    margin-top: 40px;
+}
+
+.description p {
+    letter-spacing: -2px;
+    margin-top: 13px;
+    font-size: 20px;
+}
+
+.description h1 {
+    font-weight: bold;
+    font-size: 33px;
+}
+
+/* Links das redes sociais */
+.links {
+    margin-top: 40px;
+    width: 60%;
+    flex-direction: column;
+    justify-content: start;
+}
+
+.links div {
+    margin-top: 20px;
+}
+
+.social-media {
+    display: flex;
+    justify-content: start;
+    background: #ffff;
+    width: 100%;
+    height: 80px;
+    border: none;
+    border-radius: 15px;
+}
+
+.social-media h5 {
+    font-size: 23px;
+    font-family: 'Sono';
+    padding: 25px;
+}
+
+a {
+    text-decoration: none;
+}
+
+button {
+    cursor: pointer;
+}
+
+/* hover nos links das redes sociais */
+.github:hover {
+    background: rgb(11, 11, 11);
+    border: 2px solid #fff;
+    color: #ffff;
+}
+
+.linkedin:hover {
+    background: #0e76a8;
+    border: 2px solid #fff;
+    color: #ffff;
+}
+
+.portifolio:hover {
+    background: rgb(240, 11, 99);
+    border: 2px solid #fff;
+    color: #ffff;
+}
+
+.instagram:hover {
+    background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
+    border: 2px solid #fff;
+    color: #000;
+}
