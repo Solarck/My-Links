@@ -29,18 +29,9 @@ body {
 
 /* Nome */
 .name {
-    font-size: 30px;
+    font-size: 45px;
     margin-top: 50px;
     margin-left: 0px;
-
-}
-
-/* Foto */
-.profile {
-    width: 150px;
-    height: 130px;
-    border-radius: 100%;
-    border: 3px solid #ffff;
 }
 
 /* Texto de descrição */
@@ -49,7 +40,7 @@ body {
     flex-direction: column;
     justify-content: start;
     width: 60%;
-    margin-top: 40px;
+    margin-top: 10px;
 }
 
 .description p {
@@ -60,7 +51,7 @@ body {
 
 .description h1 {
     font-weight: bold;
-    font-size: 33px;
+    font-size: 25px;
 }
 
 /* Links das redes sociais */
